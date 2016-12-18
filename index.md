@@ -10,5 +10,13 @@ title: asdf
 
 ## H2
 
+```{.python}
+
+def function(asdf):
+    """
+    """
+    return None
+```
+
 ### H3
 
