@@ -1,0 +1,6 @@
+**/*        # Exclude all files by default
+!**/        # include all directories
+!.gitignore # include the .gitignore file
+!*.md       # include all Markdown files
+!*.yml      # include all YAML metadata files
+
