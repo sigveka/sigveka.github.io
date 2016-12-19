@@ -10,93 +10,15 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!--
-                    Mathematics
+          Mathematics
     -->
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <script type="text/javascript" src="assets/javascript/mathJaxConfig.js"></script>
     <!--
-                    Highlighting
     -->
-    <script type="text/x-mathjax-config">
-        /*
-        @brief    Main Control structure for MathJax
-        @details
-        @bug      Bad experience with using '$' as inline mathematics
-        @note:
-              [Official Documentation](http://docs.mathjax.org/en/latest/api/hub.html)
-        */
-        MathJax.Hub.Config({
-            /// List of extensions to load at startup
-            extensions: [
-                          "tex2jax.js",
-            ],
-            /// CSS style sheets to load at startup
-            styleSheets: [
-              "",
-            ],
-            /// List of input and output jax to initialize at startup
-            jax: [
-                    "input/TeX",                               // Run TeX pre-processor
-                    "output/HTML-CSS",
-            ],
-            /// Preprocessor run when "tex2jax.js" is included in extensions list
-            tex2jax: {
-                   /// Tags whose contents should not be processed by tex2jax
-                   skipTags: [
-                               "script","noscript","style","textarea","pre","code",
-                   ],
-                   /// Pairs of strings used as in-line math delimters
-                   inlineMath: [
-                                ['$','$'],
-                                ['\\(','\\)'],
-                   ],
-                   /// Strings used as delimters for displayed equation
-                   displayMath: [
-                                  ['$$','$$'],
-                                  ['\\[','\\]'],
-                   ],
-                   /// Process LaTeX environments (\begin{something}) outside of "math"
-                   processEnvironments: true,
-                   /// Insert the text 'LaTeX math' as the preview
-                   preview: [" [LaTeX math] "],
-                   /// Tell MJ to process escapes (true because of $ in inline math
-                   processEscapes: true,  //   Use \$ to represent literal dollar sign...
-            },
-            /// Control the TeX processor (run when you include "input/TeX" in jax)
-            TeX: {
-                   /// MathJax has many TeX symbols and commands, but we need more...
-                   extensions: [
-                          "AMSmath.js",
-                          "AMSsymbols.js",
-                          "color.js",
-                          "newcommand.js",
-                   ],
-                   equationNumbers: {
-                        autoNumber: "AMS",
-                   },
-                   /// Macros defined before the TeX input processor begins
-                   Macros: {
-                      xspace: '',     // not processed by MathJax, replace empty string
-                      ensuremath: '', // not processed by MathJax, replace empty string
-                   },
-            },
-        });
-        /*
-        @brief    Set a listener on the startup signal
-        */
-        MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
-          MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
-            cancel: ["Extension","cancel"],
-            bcancel: ["Extension","cancel"],
-            xcancel: ["Extension","cancel"],
-            cancelto: ["Extension","cancel"],
-            textcolor: ["Extension", "color"],
-          });
-        });
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-light.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>

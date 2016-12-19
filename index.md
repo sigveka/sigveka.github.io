@@ -1,24 +1,35 @@
 ---
-title: asdf
+title: This is my title
 ---
 
-# H1
+# Mathematics
+
 
 \\[
   \mathbf{A} \mathbf{x} = \mathbf{b}
 \\]
 
-## H2
+
+# Code
+
 
 ```{.python}
-
 def function(asdf):
     """
     """
+    # asdf
+    a = 0
+    b = "asfs"
     return None
 ```
 
-### H3
+# Table
 
-afadfgasdf
+> afadfgasdf
 
+| asdf || asdf |
+| ---- | ---- | ----- |
+| fda | asdsf | asfsd |
+
+
+~~asdf~~
