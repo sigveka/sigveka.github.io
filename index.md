@@ -1,6 +1,12 @@
 ---
-title: This is my title
+layout: default
+title: Jekyll test site
+menu: main
 ---
+
+
+
+
 
 # Mathematics
 
@@ -33,3 +39,7 @@ def function(asdf):
 
 
 ~~asdf~~
+
+
+
+
